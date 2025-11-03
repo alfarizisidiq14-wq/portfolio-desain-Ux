@@ -1,105 +1,3 @@
-<style>
-    /* Styling Umum */
-    body { 
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-        text-align: center; 
-        padding: 20px;
-        background-color: #f4f7f6;
-        color: #333;
-    }
-    header {
-        margin-bottom: 40px;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    h1 {
-        color: #007bff;
-        font-size: 2.5em;
-        margin-bottom: 5px;
-    }
-    .biodata {
-        font-size: 1.1em;
-        font-weight: 600;
-        color: #555;
-    }
-    .project-desc {
-        max-width: 800px;
-        margin: 15px auto 0;
-        font-style: italic;
-        color: #666;
-    }
-    hr {
-        border: 0;
-        height: 1px;
-        background: #ccc;
-        margin: 40px 0;
-    }
-    
-    /* Styling Form UX System (tetap sama) */
-    #ux-form-section {
-        max-width: 400px;
-        margin: 20px auto;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        text-align: left;
-    }
-    /* (CSS untuk form: input, button, dll. di sini, sama seperti sebelumnya) */
-    .input-group { margin-bottom: 15px; }
-    label { display: block; margin-bottom: 5px; font-weight: 600; }
-    input[type="text"], input[type="password"] {
-        width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;
-    }
-    #submit-button {
-        width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 1.1em; transition: background-color 0.3s;
-    }
-    #submit-button:disabled { background-color: #6c757d; cursor: not-allowed; }
-    .status-message { font-size: 0.9em; margin-top: 5px; min-height: 1.2em; }
-
-
-    /* --- TATA LETAK GRID UTAMA (Default: 1 Kolom) --- */
-    #design-grid {
-        display: grid;
-        grid-template-columns: 1fr; /* Default: 1 kolom untuk layar kecil/HP */
-        gap: 15px;
-        max-width: 1400px; 
-        margin: 0 auto;
-    }
-
-    .grid-item {
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        overflow: hidden;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    }
-    img { 
-        width: 100%; 
-        height: auto; 
-        display: block; 
-        margin-bottom: 0; 
-        border: none;
-    }
-
-    /* --- MEDIA QUERY: Layar Sedang (Laptop, Tablet Landscape) --- */
-    @media (min-width: 768px) {
-        #design-grid {
-            /* 3 Kolom jika lebar layar minimal 768px */
-            grid-template-columns: repeat(3, 1fr); 
-        }
-    }
-
-    /* --- MEDIA QUERY: Layar Besar (Desktop, Monitor Lebar) --- */
-    @media (min-width: 1200px) {
-        #design-grid {
-            /* 5 Kolom (target Anda) jika lebar layar minimal 1200px */
-            grid-template-columns: repeat(5, 1fr); 
-        }
-    }
-</style>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -107,7 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Desain UX Alfarizi Sidiq</title>
     <style>
-        /* CSS Akan diletakkan di sini */
+        /* Styling Umum */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            text-align: center; 
+            padding: 20px;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        header {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007bff;
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+        .biodata {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #555;
+        }
+        .project-desc {
+            max-width: 800px;
+            margin: 15px auto 0;
+            font-style: italic;
+            color: #666;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ccc;
+            margin: 40px 0;
+        }
+        
+        /* Styling Form UX System */
+        #ux-form-section {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        #ux-form-section h3 {
+            text-align: center;
+            color: #28a745;
+            margin-top: 0;
+        }
+        .input-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: 600; }
+        input[type="text"], input[type="password"] {
+            width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;
+        }
+        #submit-button {
+            width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 1.1em; transition: background-color 0.3s;
+        }
+        #submit-button:disabled { background-color: #6c757d; cursor: not-allowed; }
+        .status-message { font-size: 0.9em; margin-top: 5px; min-height: 1.2em; }
+
+
+        /* --- TATA LETAK LIST UTAMA (Sekarang UL/LI untuk Level 5) --- */
+        #design-list {
+            list-style: none; /* Menghilangkan bullet pada list utama */
+            padding: 0;
+            
+            display: grid;
+            grid-template-columns: 1fr; /* Default: 1 kolom */
+            gap: 15px;
+            max-width: 1400px; 
+            margin: 0 auto;
+        }
+
+        .grid-item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            /* Tambahkan padding agar penjelasan UX tidak menempel */
+            padding-bottom: 10px; 
+            background-color: #fff; /* Latar belakang putih untuk item */
+        }
+        
+        img { 
+            width: 100%; 
+            height: auto; 
+            display: block; 
+            margin-bottom: 0; 
+            border: none;
+        }
+        
+        /* Styling tambahan untuk list penjelasan UX di dalam LI (Wajib Level 5) */
+        .ux-explanation {
+            list-style: disc; /* Kembalikan bullet untuk penjelasan UX */
+            text-align: left;
+            padding: 0 15px 0 35px;
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #444;
+        }
+        .ux-explanation li {
+            margin-bottom: 5px;
+        }
+
+
+        /* --- MEDIA QUERY: Layar Sedang (Laptop, Tablet Landscape) --- */
+        @media (min-width: 768px) {
+            #design-list {
+                grid-template-columns: repeat(3, 1fr); 
+            }
+        }
+
+        /* --- MEDIA QUERY: Layar Besar (Desktop, Monitor Lebar) --- */
+        @media (min-width: 1200px) {
+            #design-list {
+                grid-template-columns: repeat(5, 1fr); 
+            }
+        }
     </style>
 </head>
 <body>
@@ -144,35 +163,234 @@
 
     <hr>
 
-    <h2>🖼️ Galeri 25 Gambar Desain (5x5 Grid)</h2>
+    <h2>✨ Visualisasi 25 Desain Antarmuka Pilihan</h2>
     
-    <div id="design-grid">
-        <div class="grid-item"><img src="Dashboard-1.png" alt="Landing Page"></div>
-        <div class="grid-item"><img src="Dashboard-2.png" alt="Login Screen"></div>
-        <div class="grid-item"><img src="Dashboard-3.png" alt="CRUD Feature"></div>
-        <div class="grid-item"><img src="Dashboard-4.png" alt="Report Screen"></div>
-        <div class="grid-item"><img src="Dashboard.png" alt="Report Screen"></div>
-        <div class="grid-item"><img src="admin1.png" alt="Report Screen"></div>
-        <div class="grid-item"><img src="admin 2.png" alt="Report Screen"></div>
-        <div class="grid-item"><img src="tiket.png" alt="Report Screen"></div>
-        <div class="grid-item"><img src="tiket 1.png" alt="Report Screen"></div>
-        <div class="grid-item"><img src="tiket 2.png" alt="Report Screen"></div>
-        <div class="grid-item"><img src="antri.png" alt="Report Screen"></div>
-        <div class="grid-item"><img src="antri1.png" alt="Report Screen"></div>
-        <div class="grid-item"><img src="antri2.png" alt="Report Screen"></div>
-        <div class="grid-item"><img src="Halaman Kelola Akun.png" alt="Report Screen"></div>
-        <div class="grid-item"><img src="Laporan Statistik Mingguan.png" alt="Report Screen"></div>
-        <div class="grid-item"><img src="Laporan Statistik PerDevisi.png" alt="Report Screen"></div>
-        <div class="grid-item"><img src="Penganturan.png" alt="Report Screen"></div>
-        <div class="grid-item"><img src="Penugasan 1.png" alt="Report Screen"></div>
-        <div class="grid-item"><img src="Riwayat Aktivitas Pengguna.png" alt="Report Screen"></div>
-        <div class="grid-item"><img src="tiket 3.png" alt="Report Screen"></div>
-        <div class="grid-item"><img src="tiket 4.png" alt="Report Screen"></div>
-        <div class="grid-item"><img src="tiket 5.png" alt="Report Screen"></div>
-        <div class="grid-item"><img src="tiket 6.png" alt="Report Screen"></div>
-        <div class="grid-item"><img src="tiket 7.png" alt="Report Screen"></div>
-        <div class="grid-item"><img src="Notifikasi Tiket Mendekati Deadline.png" alt="Report Screen"></div>
-    </div>
+    <ul id="design-list">
+        <li class="grid-item">
+            <img src="Dashboard-1.png" alt="Landing Page">
+            <ul class="ux-explanation">
+                <li>UX 1: </li>
+                <li>UX 2: </li>
+                <li>UX 3: </li>
+            </ul>
+        </li>
+
+        <li class="grid-item">
+            <img src="Dashboard-2.png" alt="Login Screen">
+            <ul class="ux-explanation">
+                <li>UX 1: </li>
+                <li>UX 2: </li>
+                <li>UX 3: </li>
+            </ul>
+        </li>
+
+        <li class="grid-item">
+            <img src="Dashboard-3.png" alt="CRUD Feature">
+            <ul class="ux-explanation">
+                <li>UX 1: </li>
+                <li>UX 2: </li>
+                <li>UX 3: </li>
+            </ul>
+        </li>
+
+        <li class="grid-item">
+            <img src="Dashboard-4.png" alt="Report Screen">
+            <ul class="ux-explanation">
+                <li>UX 1: </li>
+                <li>UX 2: </li>
+                <li>UX 3: </li>
+            </ul>
+        </li>
+        
+        <li class="grid-item">
+            <img src="Dashboard.png" alt="Report Screen">
+            <ul class="ux-explanation">
+                <li>UX 1: </li>
+                <li>UX 2: </li>
+                <li>UX 3: </li>
+            </ul>
+        </li>
+
+        <li class="grid-item">
+            <img src="admin1.png" alt="Report Screen">
+            <ul class="ux-explanation">
+                <li>UX 1: </li>
+                <li>UX 2: </li>
+                <li>UX 3: </li>
+            </ul>
+        </li>
+        
+        <li class="grid-item">
+            <img src="admin 2.png" alt="Report Screen">
+            <ul class="ux-explanation">
+                <li>UX 1: </li>
+                <li>UX 2: </li>
+                <li>UX 3: </li>
+            </ul>
+        </li>
+        
+        <li class="grid-item">
+            <img src="tiket.png" alt="Report Screen">
+            <ul class="ux-explanation">
+                <li>UX 1: </li>
+                <li>UX 2: </li>
+                <li>UX 3: </li>
+            </ul>
+        </li>
+        
+        <li class="grid-item">
+            <img src="tiket 1.png" alt="Report Screen">
+            <ul class="ux-explanation">
+                <li>UX 1: </li>
+                <li>UX 2: </li>
+                <li>UX 3: </li>
+            </ul>
+        </li>
+        
+        <li class="grid-item">
+            <img src="tiket 2.png" alt="Report Screen">
+            <ul class="ux-explanation">
+                <li>UX 1: </li>
+                <li>UX 2: </li>
+                <li>UX 3: </li>
+            </ul>
+        </li>
+        
+        <li class="grid-item">
+            <img src="antri.png" alt="Report Screen">
+            <ul class="ux-explanation">
+                <li>UX 1: </li>
+                <li>UX 2: </li>
+                <li>UX 3: </li>
+            </ul>
+        </li>
+        
+        <li class="grid-item">
+            <img src="antri1.png" alt="Report Screen">
+            <ul class="ux-explanation">
+                <li>UX 1: </li>
+                <li>UX 2: </li>
+                <li>UX 3: </li>
+            </ul>
+        </li>
+        
+        <li class="grid-item">
+            <img src="antri2.png" alt="Report Screen">
+            <ul class="ux-explanation">
+                <li>UX 1: </li>
+                <li>UX 2: </li>
+                <li>UX 3: </li>
+            </ul>
+        </li>
+        
+        <li class="grid-item">
+            <img src="Halaman Kelola Akun.png" alt="Report Screen">
+            <ul class="ux-explanation">
+                <li>UX 1: </li>
+                <li>UX 2: </li>
+                <li>UX 3: </li>
+            </ul>
+        </li>
+        
+        <li class="grid-item">
+            <img src="Laporan Statistik Mingguan.png" alt="Report Screen">
+            <ul class="ux-explanation">
+                <li>UX 1: </li>
+                <li>UX 2: </li>
+                <li>UX 3: </li>
+            </ul>
+        </li>
+        
+        <li class="grid-item">
+            <img src="Laporan Statistik PerDevisi.png" alt="Report Screen">
+            <ul class="ux-explanation">
+                <li>UX 1: </li>
+                <li>UX 2: </li>
+                <li>UX 3: </li>
+            </ul>
+        </li>
+        
+        <li class="grid-item">
+            <img src="Penganturan.png" alt="Report Screen">
+            <ul class="ux-explanation">
+                <li>UX 1: </li>
+                <li>UX 2: </li>
+                <li>UX 3: </li>
+            </ul>
+        </li>
+        
+        <li class="grid-item">
+            <img src="Penugasan 1.png" alt="Report Screen">
+            <ul class="ux-explanation">
+                <li>UX 1: </li>
+                <li>UX 2: </li>
+                <li>UX 3: </li>
+            </ul>
+        </li>
+        
+        <li class="grid-item">
+            <img src="Riwayat Aktivitas Pengguna.png" alt="Report Screen">
+            <ul class="ux-explanation">
+                <li>UX 1: </li>
+                <li>UX 2: </li>
+                <li>UX 3: </li>
+            </ul>
+        </li>
+        
+        <li class="grid-item">
+            <img src="tiket 3.png" alt="Report Screen">
+            <ul class="ux-explanation">
+                <li>UX 1: </li>
+                <li>UX 2: </li>
+                <li>UX 3: </li>
+            </ul>
+        </li>
+        
+        <li class="grid-item">
+            <img src="tiket 4.png" alt="Report Screen">
+            <ul class="ux-explanation">
+                <li>UX 1: </li>
+                <li>UX 2: </li>
+                <li>UX 3: </li>
+            </ul>
+        </li>
+        
+        <li class="grid-item">
+            <img src="tiket 5.png" alt="Report Screen">
+            <ul class="ux-explanation">
+                <li>UX 1: </li>
+                <li>UX 2: </li>
+                <li>UX 3: </li>
+            </ul>
+        </li>
+        
+        <li class="grid-item">
+            <img src="tiket 6.png" alt="Report Screen">
+            <ul class="ux-explanation">
+                <li>UX 1: </li>
+                <li>UX 2: </li>
+                <li>UX 3: </li>
+            </ul>
+        </li>
+        
+        <li class="grid-item">
+            <img src="tiket 7.png" alt="Report Screen">
+            <ul class="ux-explanation">
+                <li>UX 1: </li>
+                <li>UX 2: </li>
+                <li>UX 3: </li>
+            </ul>
+        </li>
+        
+        <li class="grid-item">
+            <img src="Notifikasi Tiket Mendekati Deadline.png" alt="Report Screen">
+            <ul class="ux-explanation">
+                <li>UX 1: </li>
+                <li>UX 2: </li>
+                <li>UX 3: </li>
+            </ul>
+        </li>
+    </ul>
     
     <script src="script.js"></script>
 </body>
