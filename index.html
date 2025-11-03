@@ -45,11 +45,11 @@
         
         /* --- TATA LETAK LIST UTAMA (UL/LI) --- */
         #design-list {
-            list-style: none; /* Menghilangkan bullet pada list utama */
+            list-style: none;
             padding: 0;
             
             display: grid;
-            grid-template-columns: 1fr; /* Default: 1 kolom */
+            grid-template-columns: 1fr;
             gap: 15px;
             max-width: 1400px; 
             margin: 0 auto;
@@ -58,7 +58,6 @@
         .grid-item {
             border: 1px solid #ddd;
             border-radius: 5px;
-            /* Pastikan gambar tidak pecah */
             overflow: hidden; 
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
             padding-bottom: 10px; 
@@ -75,7 +74,7 @@
         
         /* Styling untuk list penjelasan UX (Wajib Level 5) */
         .ux-explanation {
-            list-style: disc; /* Kembalikan bullet untuk penjelasan UX */
+            list-style: disc; 
             text-align: left;
             padding: 0 15px 0 35px;
             margin-top: 10px;
@@ -146,45 +145,45 @@
         <li class="grid-item">
             <img src="Dashboard-4.png" alt="Report Screen">
             <ul class="ux-explanation">
-                <li>UX 1: **Wajib Diisi.** Penjelasan UX Anda.</li>
-                <li>UX 2: **Wajib Diisi.** Penjelasan UX Anda.</li>
-                <li>UX 3: **Wajib Diisi.** Penjelasan UX Anda.</li>
+                <li>UX 1: Penggunaan *Sidebar Navigation* yang ringkas dan *collapsible* (dapat dilipat) untuk menghemat ruang layar.</li>
+                <li>UX 2: Ikonografi yang jelas (misalnya ikon orang untuk Staf, ikon *checklist* untuk Tugas) membantu pemahaman cepat.</li>
+                <li>UX 3: Tata letak kartu (Staf Administrasi, Tugas Baru) yang membagi informasi menjadi *chunk* yang mudah diproses.</li>
             </ul>
         </li>
         
         <li class="grid-item">
             <img src="Dashboard.png" alt="Report Screen">
             <ul class="ux-explanation">
-                <li>UX 1: **Wajib Diisi.** Penjelasan UX Anda.</li>
-                <li>UX 2: **Wajib Diisi.** Penjelasan UX Anda.</li>
-                <li>UX 3: **Wajib Diisi.** Penjelasan UX Anda.</li>
+                <li>UX 1: Warna Biru tua (Navy) sebagai warna primer memberikan kesan profesional, terpercaya, dan bersih.</li>
+                <li>UX 2: Struktur 5x5 grid (di tampilan galeri) membantu pengguna memindai 25 desain dengan cepat (Prinsip Hick's Law).</li>
+                <li>UX 3: Pemisahan jelas antara Header (judul, biodata) dan Konten Utama (galeri/form) dengan garis pemisah (`<hr>`).</li>
             </ul>
         </li>
 
         <li class="grid-item">
             <img src="admin1.png" alt="Report Screen">
             <ul class="ux-explanation">
-                <li>UX 1: **Wajib Diisi.** Penjelasan UX Anda.</li>
-                <li>UX 2: **Wajib Diisi.** Penjelasan UX Anda.</li>
-                <li>UX 3: **Wajib Diisi.** Penjelasan UX Anda.</li>
+                <li>UX 1: Penggunaan tabel yang responsif untuk Daftar Tiket agar mudah diakses di berbagai ukuran layar.</li>
+                <li>UX 2: Fitur Filter dan Search (pencarian) ditempatkan di atas tabel untuk mempermudah navigasi data.</li>
+                <li>UX 3: Desain menunjukkan *Affordance* yang jelas, di mana tombol Tambah Tugas terlihat menonjol dan dapat diklik.</li>
             </ul>
         </li>
         
         <li class="grid-item">
             <img src="admin 2.png" alt="Report Screen">
             <ul class="ux-explanation">
-                <li>UX 1: **Wajib Diisi.** Penjelasan UX Anda.</li>
-                <li>UX 2: **Wajib Diisi.** Penjelasan UX Anda.</li>
-                <li>UX 3: **Wajib Diisi.** Penjelasan UX Anda.</li>
+                <li>UX 1: Kartu (Card) digunakan untuk memisahkan setiap Tugas/Tiket, membantu memproses informasi terpisah.</li>
+                <li>UX 2: Desain menggunakan *white space* (ruang kosong) yang cukup di sekitar elemen untuk mengurangi kepadatan visual.</li>
+                <li>UX 3: Tombol Aksi (Tugaskan, Status, dll.) diletakkan secara kontekstual di dalam kartu yang relevan.</li>
             </ul>
         </li>
         
         <li class="grid-item">
             <img src="tiket.png" alt="Report Screen">
             <ul class="ux-explanation">
-                <li>UX 1: **Wajib Diisi.** Penjelasan UX Anda.</li>
-                <li>UX 2: **Wajib Diisi.** Penjelasan UX Anda.</li>
-                <li>UX 3: **Wajib Diisi.** Penjelasan UX Anda.</li>
+                <li>UX 1: Desain tiket/tugas yang ringkas (hanya Judul, Status, Tanggal) untuk *glanceability* di daftar utama.</li>
+                <li>UX 2: Status "Baru Dibuka" dan "Dalam Proses" menggunakan warna yang berbeda untuk sinyal cepat.</li>
+                <li>UX 3: Penomoran tiket (misal T-0105) memberikan identitas unik dan dapat dilacak (*traceability*).</li>
             </ul>
         </li>
         
@@ -342,5 +341,5 @@
         </li>
     </ul>
     
-    </body>
+</body>
 </html>
